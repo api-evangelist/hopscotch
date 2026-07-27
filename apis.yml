@@ -1,7 +1,23 @@
 aid: hopscotch
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hopscotch.png
 name: Hopscotch
-description: Hopscotch is a company surfaced as a portfolio company of 8vc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Hopscotch Primary Care is a value-based healthcare provider bringing relationship-based
+  primary care to rural communities, with a focus on seniors on Medicare and Medicare/Medicaid plans.
+  Operating clinics across Western North Carolina and beyond, Hopscotch pairs longer appointments and
+  multidisciplinary care teams with same-day access and help navigating insurance. Backed by 8VC, CVS
+  Health Ventures, K2 HealthVentures, Town Hall Ventures and others, it is a patient-facing care company
+  with no public developer API surface; patient records are handled through an athenahealth portal.
 url: https://raw.githubusercontent.com/api-evangelist/hopscotch/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Healthcare
+- Primary Care
+- Medicare
+- Value-Based Care
+- Rural Health
+- Senior Care
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +43,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/hopscotch-domain-security.yml
 - type: Website
   url: https://hellohopscotch.com
+- type: PrivacyPolicy
+  url: https://hellohopscotch.com/privacy-policy/
+- type: TermsOfService
+  url: https://hellohopscotch.com/terms-of-use
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
